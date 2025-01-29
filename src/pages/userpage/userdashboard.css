@@ -1,0 +1,189 @@
+/* dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    /* width: 100%; */
+    min-width: 20vw;
+    min-height: 40vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .logout-button,
+  .edit-button,
+  .delete-account-button,
+  .changePassword,
+  .dashboard-buttons button {
+    background-color: #4163d3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover,
+  .edit-button:hover,
+  .delete-account-button:hover,
+  .changePassword:hover,
+  .dashboard-buttons button:hover {
+    background-color: #1d6ec3;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .dashboard-message {
+    background-color: #ffefc4;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .dashboard-customer-details {
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-customer-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-detail-item {
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-detail-item label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .dashboard-detail-item input {
+    padding: 8px;
+    width: calc(100% - 120px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .dashboard-buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .dashboard-order-history {
+    margin-top: 30px;
+  }
+  
+  .dashboard-order-history h2 {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-order-table th,
+  .dashboard-order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dashboard-order-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard-order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-order-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+
+
+  .dashboard-customer-details {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-customer-details h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .dashboard-detail-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard-detail-item label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-detail-item input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .dashboard-detail-item input:focus {
+    border-color: #4a69f1;
+  }
+  
+  form button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4a69f1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #3b54d2;
+  }
+  
+  

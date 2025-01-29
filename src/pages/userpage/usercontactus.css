@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #4f80da, #3390e1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.cont {
+  position: relative;
+  min-width: 30vw;
+  min-height: 60vh;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent for a modern effect */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for elevation */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff105f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.name,
+.email,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.name:focus,
+.email:focus,
+textarea:focus {
+  border: 2px solid #ff105f;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255, 16, 95, 0.4); /* Focus shadow effect */
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #5885d2, #3992d2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Elevated button */
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to left, #5079d2, #5d87d0);
+  transform: translateY(-3px) scale(1.05); /* Elevation and zoom on hover */
+  box-shadow: 0 8px 20px rgba(255, 16, 95, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

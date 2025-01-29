@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-width: 30vw;
+  min-height: 70vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background-color: #f9f9f9;
+  border: 2px solid #6c63ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+
+.dashboard-details-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.dashboard-detail-item {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-detail-item strong {
+  color: #6c63ff;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #ff6b6b, #d32f2f);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 7vh;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 107, 107, 0.2);
+}
+
+.app-version {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 500px) {
+    .profile-container {
+      padding: 15px;
+    }
+  
+    .profile-name {
+      font-size: 1.4rem;
+    }
+  
+    .profile-details button {
+      font-size: 0.9rem;
+    }
+  
+    .logout-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

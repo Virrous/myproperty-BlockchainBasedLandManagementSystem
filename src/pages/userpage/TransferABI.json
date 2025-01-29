@@ -1,0 +1,156 @@
+[
+    {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "landId",
+            "type": "uint256"
+          }
+        ],
+        "name": "getLandDetails",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "landCount",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "name": "lands",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "ownerCitizenship",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "ownerAddress",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "landNumber",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "landArea",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "taxClearance",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "location",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "owner",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "ownerCitizenship",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "ownerAddress",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "landNumber",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "landArea",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "taxClearance",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "location",
+            "type": "string"
+          }
+        ],
+        "name": "registerLand",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+]

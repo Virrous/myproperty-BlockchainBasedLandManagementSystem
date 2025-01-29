@@ -1,0 +1,124 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background: #f5f6fa;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Box */
+.form-box {
+  background: #ffffff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  height: 620px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Button Toggle Box */
+.buttonBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  width: 48%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #6a11cb;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+/* Input Fields */
+form input,
+form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus {
+  border: 1px solid #2575fc;
+  outline: none;
+}
+
+/* Form Button */
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #6a11cb;
+}
+
+/* Message Box */
+.message {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #fce4ec;
+  color: #c62828;
+  border: 1px solid #f8bbd0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .form-box {
+      width: 100%;
+      padding: 1.5rem;
+  }
+
+  .toggle-btn {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+  }
+
+  form input,
+  form select {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+  }
+
+  form button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+  }
+}

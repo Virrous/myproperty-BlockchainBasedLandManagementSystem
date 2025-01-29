@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffebee);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    min-width: 40vw;
+    min-height: 60vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    overflow: hidden;
+  }
+  
+  .container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #6c63ff;
+    padding-bottom: 15px;
+  }
+  
+  .transactions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 7vh;
+  }
+  
+  .transaction-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%; /* Adjust width to increase size */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+  }
+  
+  .transaction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .transaction-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .transaction-item strong {
+    color: #6c63ff;
+  }
+  
+  .btn-view {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #6c63ff, #3a3dff);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-view:hover {
+    background: linear-gradient(135deg, #3a3dff, #6c63ff);
+    transform: scale(1.05);
+  }
+
+
+  /* Modal overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Section styling inside modal */
+  .section {
+    margin-bottom: 25px; /* Add spacing between sections */
+  }
+  
+  .section:last-child {
+    margin-bottom: 0; /* Remove spacing after the last section */
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .section p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Buttons inside the modal */
+  .btn-accept,
+  .btn-reject {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-accept {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-accept:hover {
+    background-color: #218838;
+  }
+  
+  .btn-reject {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-reject:hover {
+    background-color: #c82333;
+  }
+  
+  /* Animation for modal appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .transaction-item {
+      width: 100%;
+    }
+    .container {
+      padding: 20px;
+    }
+    .container h2 {
+      font-size: 1.5rem;
+    }
+    .btn-view {
+      font-size: 1rem;
+    }
+  }
+  

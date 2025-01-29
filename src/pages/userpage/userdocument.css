@@ -1,0 +1,282 @@
+/* General body styling for centering */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Soft background color */
+}
+ 
+/* Centered container styling */
+.unique-centered-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Adjust width for a balanced look */
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  min-width: 30vw;
+  min-height: 50vh;
+}
+ 
+.hidden {
+  display: none;
+}
+ 
+.unique-details-container h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+ 
+.bold h3 {
+  font-weight: bold;
+}
+ 
+/* Button container styling */
+.unique-button-container {
+  margin-top: 20px; /* Space above the button */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+ 
+/* Buy and Sell button styling */
+.unique-buy-button,
+.unique-sell-button {
+  padding: 8px 12px;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+ 
+.unique-buy-button {
+  background-color: #007bff;
+}
+ 
+.unique-buy-button:hover {
+  background-color: #0056b3;
+}
+ 
+.unique-sell-button {
+  background-color: #28a745;
+}
+ 
+.unique-sell-button:hover {
+  background-color: #1c7e31;
+}
+ 
+fieldset {
+  border: 2px solid #4a69f1;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4a69f1;
+}
+ 
+form label {
+  margin: 1px;
+  font-size: 1rem;
+}
+ 
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+ 
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4a69f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ 
+form button:hover {
+  background-color: #1556e1;
+}
+ 
+.unique-image-container img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.unique-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.unique-buy-button {
+  position: absolute;
+  top: 500px;
+  left: 90%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10; /* Ensure it stays above other elements */
+}
+ 
+.unique-buy-button:hover {
+  background-color: #0056b3;
+}
+ 
+.details-container-bold h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  margin: 0;
+  padding-bottom: 20px;
+}
+ 
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+ 
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+ 
+/* Container for the entire application */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+ 
+/* Form fieldset styling */
+.unique-fieldset {
+  border: 2px solid #4a69f1;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Flex layout for the form */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+ 
+/* Half-width form inputs */
+.half-form {
+  flex: 1 1 45%;
+}
+ 
+/* Form input styling */
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+ 
+/* Button styling */
+form button {
+  padding: 12px;
+  background-color: #4a69f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+ 
+form button:hover {
+  background-color: #1556e1;
+}
+ 
+/* Button Container */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+ 
+.unique-buy-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+.unique-buy-button:hover {
+  background-color: #0056b3;
+}
+ 
+/* Make the form responsive */
+@media (max-width: 768px) {
+  .half-form {
+    flex: 1 1 100%;
+  }
+}
+ 
+h3{
+  display: flex;
+  justify-content:first baseline;
+  text-align: left;
+}

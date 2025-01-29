@@ -1,0 +1,160 @@
+/* Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Container */
+.office-login-container {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 30vw;
+  min-height: 60vh;
+
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header Section */
+.office-login-header {
+  margin-bottom: 20px;
+}
+
+.office-login-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.office-login-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.office-login-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Input Fields */
+.office-login-input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.office-login-input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.office-login-input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0px 0px 4px rgba(106, 17, 203, 0.3);
+}
+
+.office-login-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.office-login-password-toggle:hover {
+  color: #333;
+}
+
+/* Checkbox Group */
+.office-login-checkbox-group {
+  display: absolute;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.office-login-checkbox-group label {
+  display: absolute;
+  
+}
+
+.office-login-checkbox-group input {
+  margin-right: 8px;
+}
+
+/* Login Button */
+.office-login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.office-login-button:hover {
+  background: linear-gradient(to left, #ff512f, #dd2476);
+  transform: scale(1.02);
+}
+
+/* Error/Success Message */
+.office-login-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #ff512f;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Form Title Styling */
+.office-login-form h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .office-login-container {
+    padding: 20px 15px;
+  }
+
+  .office-login-logo {
+    width: 60px;
+  }
+
+  .office-login-header h2 {
+    font-size: 20px;
+  }
+
+  .office-login-input {
+    font-size: 14px;
+    padding: 10px 40px 10px 12px;
+  }
+
+  .office-login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
